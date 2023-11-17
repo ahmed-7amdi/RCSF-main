@@ -1,0 +1,34 @@
+.language {
+   padding: 10px 20px;
+   color: white;
+   background-color: #217443;
+   position: fixed;
+   outline: none;
+   border: none;
+   right: 20px;
+   top: 22px;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: 0.3s;
+   font-weight: 800;
+}
+
+@media (max-width: 1116px) {
+   .language {
+      right: 140px;
+      top: 30px;
+   }
+}
+
+@media (max-width: 767px) {
+   .language {
+      right: 70px;
+      top: 20px;
+   }
+}
+
+.language:hover {
+   background-color: white;
+   color: #217443;
+   scale: 1.05;
+}

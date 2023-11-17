@@ -1,0 +1,33 @@
+.swipe {
+   background-image: url('../../assets/images/Orca.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+}
+
+.swipe .slide__s2 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.swipe .content {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   color: white;
+   width: 75%;
+   text-align: center;
+   font-size: 25px;
+}
+
+@media (max-width: 767px) {
+   .swipe .content {
+      font-size: 20px;
+   }
+
+   .swipe .content h3 {
+      font-size: 20px;
+   }
+}

@@ -1,0 +1,124 @@
+/* Start Global Rules */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;700;800&family=Sedgwick+Ave+Display&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+}
+
+:root {
+   --main-transition: 0.3s;
+   --main-padding-top: 100px;
+   --main-padding-bottom: 100px;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+   .container {
+      width: 750px;
+   }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+   .container {
+      width: 970px;
+   }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+   .container {
+      width: 1170px;
+   }
+}
+
+body {
+   font-family: 'Cairo', sans-serif;
+}
+
+/* Start Components */
+.main-title {
+   font-size: 30px;
+   margin: 0 auto 80px;
+   width: fit-content;
+   border: 2px solid white;
+   padding: 10px 20px;
+   text-transform: uppercase;
+   position: relative;
+   z-index: 1;
+   transition: var(--main-transition);
+   color: white;
+}
+
+@media (max-width:767px) {
+   .main-title-en {
+      font-size: 17px;
+   }
+}
+
+.main-title:hover {
+   color: white;
+   border: 2px solid white;
+   transition-delay: 0.5s;
+}
+
+.main-title::before {
+   content: "";
+   height: 12px;
+   width: 12px;
+   background-color: #2da860;
+   position: absolute;
+   left: -30px;
+   border-radius: 50%;
+   top: 50%;
+   transform: translateY(-50%);
+   z-index: -1;
+}
+
+.main-title:hover:before {
+   animation: left-move 0.5s linear forwards;
+}
+
+.main-title::after {
+   content: "";
+   height: 12px;
+   width: 12px;
+   background-color: #2da860;
+   position: absolute;
+   right: -30px;
+   border-radius: 50%;
+   top: 50%;
+   transform: translateY(-50%);
+   z-index: -1;
+}
+
+.main-title:hover::after {
+   animation: right-move 0.5s linear forwards;
+}
+
+/* End Components */
+/* End Global Rules */

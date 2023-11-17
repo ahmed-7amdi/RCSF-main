@@ -1,0 +1,33 @@
+.director {
+   min-height: 100vh;
+   background-image: url('../../assets/images/Orca.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.director .container {
+   color: white;
+   font-weight: bold;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+
+.director h1 {
+   font-size: 50px;
+}
+
+@media (max-width:767px) {
+   .director .exc-h1-en {
+      font-size: 40px;
+   }
+}
+
+.director h2 {
+   font-size: 35px;
+}
